@@ -1,0 +1,85 @@
+{
+    "extends": "airbnb",
+    // "exmaFeatures": {
+    //     "jsx": true,
+    //     "modules": true,
+    //     "experimentalObjectRestSpread": true
+    // },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    // "settings": {
+    //     "import/resolver": {
+    //         "webpack": {
+    //             "config": "./webpack/dev.config.js"
+    //         }
+    //     }
+    // },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "rules": {
+        "comma-dangle": 0,
+        "func-names": 0,
+        "max-len": ["error", 160, 4, {
+            "comments": 160
+        }],
+        "indent": ["error", 2],
+        "import/prefer-default-export": 0,
+        "import/extensions": ["off", "never"],
+        "react/jsx-indent": [2, 2],
+        "semi": 0,
+        "react/sort-comp": 0,
+        "react/prop-types": 0,
+        "react/require-default-props": 0,
+        "react/prefer-es6-class": 0,
+        "react/prefer-stateless-function": 0,
+        "react/jsx-first-prop-new-line": 0,
+        "react/jsx-filename-extension": 0,
+        "react/forbid-prop-types": 0,
+        "react/no-array-index-key": 0,
+        "no-return-assign": 0,
+        "react/no-multi-comp": 0,
+        "array-callback-return": 0,
+        "new-cap": 0,
+        "no-nested-ternary": 0,
+        "no-await-in-loop": 1,
+        "no-underscore-dangle": 0,
+        "no-bitwise": ["error", {
+            "allow": ["~"]
+        }],
+        "no-console": 1,
+        "brace-style": 1,
+        "no-plusplus": 2,
+        "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
+        "import/no-unresolved": 0,
+        "import/no-extraneous-dependencies": 0,
+        "import/no-named-default": 1,
+        "jsx-a11y/no-static-element-interactions": 0,
+        "jsx-a11y/img-has-alt": 0,
+        "no-unused-vars": ["error", {
+            "vars": "all",
+            "args": "none"
+        }],
+        "no-param-reassign": ["error", {
+            "props": false
+        }],
+        "object-shorthand": 0,
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn"
+    },
+    "plugins": [
+        "react",
+        "babel",
+        "react-hooks"
+    ],
+    "globals": {
+      "Store": false
+    }
+}
